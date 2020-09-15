@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div class="formulaire">
+
+            <div>
+              <label>Nom</label>
+              <input class="nom" type="text">
+            </div> <br />
+          
+            <label>Peau</label> <br />
+            <div class="couleur">
+              <label><input type="radio" name="couleur" value='"✊","✋","✌️"' checked>👋</label>
+              <label><input type="radio" name="couleur" value='"✊🏻","✋🏻","✌🏻"'>👋🏻</label>
+              <label><input type="radio" name="couleur" value='"✊🏽","✋🏽","✌🏽"'>👋🏽</label>
+              <label><input type="radio" name="couleur" value='"✊🏿","✋🏿","✌🏿"'>👋🏿</label>
+            </div> <br />
+          
+            <div>
+              <label>Choix</label>
+              <select class="choix" name="choix">
+                <option value="✊">🥔</option>
+                <option value="✋">📄</option>
+                <option value="✌️">✂️</option>
+              </select>
+            </div> <br />
+          
+            <div>
+              <button class="jouer">Jouer</button>
+            </div>
+          </div>
+          
+          <div class="game">
+            <div class="player">
+              <p class="playerName"></p>
+              <p class="playerHand"></p>
+            </div>
+            <div class="cpu">
+              <p class="cpuName">CPU</p>
+              <p class="cpuHand"> </p>
+            </div>
+            <p class="resultat"></p>
+            <button class="rejouer">Rejouer</button>
+          </div>
+          <script src="js.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    </body>
+</html>
