@@ -21,7 +21,7 @@ jouer.addEventListener("click", () => {
   const choixFormulaire = document.querySelector(".choix");
   const choixOption = choixFormulaire.options[choixFormulaire.selectedIndex];
   const choixJoueur = document.querySelector(".playerHand");
-  choixJoueur.innerHTML = choixOption.text;
+  choixJoueur.innerHTML = choixOption.value;
 
   //cpu
   const mainCPU = document.querySelector(".cpuHand");
@@ -43,9 +43,13 @@ jouer.addEventListener("click", () => {
   mainCPU.innerHTML = randomCPU;
 
   //résultat
-  
-  
-  
+  const resultatPlayer = document.querySelector(".player");
+  const resultatCPU = document.querySelector(".cpu");
+  if (mainCPU.innerHTML == "✊" || mainCPU.innerHTML =="✊🏻" || mainCPU.innerHTML == "✊🏽" || mainCPU.innerHTML == "✊🏿"){
+  console.log("damn son!!");
+  resultatCPU.style.backgroundColor = "rgb(127, 216, 190)";
+  }
+
   //gsap
   gsap
     .timeline({})
